@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -35,14 +37,15 @@ public class MainActivity extends AppCompatActivity {
         greet.setText("Happy Birthday to " + name);
 
 
-
-
         /**
          * log is used for debugging purpose
          * value is printed in console- similar to eclipse!!
          */
 
+        //Logcat pane: Debug
         Log.d("MainActivity", "This is message and value stored in variable is:" + x); //only string so concatenate
-        Log.d(var,"x="+x); //have used value stored in variable for tag
+        Log.d(var,"Checking for log debug x="+x); //have used value stored in variable for tag
+
+        Log.i(var, "Checking for log info"); //Logcat pane: Info, Verbose, Debug
     }
 }

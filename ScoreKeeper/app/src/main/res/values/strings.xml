@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">ScoreKeeper</string>
-    <string name="team_a">Team A</string>
-    <string name="_1_points">+1 Points</string>
-    <string name="points">+points</string>
+
 </resources>
