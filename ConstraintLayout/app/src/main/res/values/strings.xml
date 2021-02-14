@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConstraintLayout</string>
+
+    <string name="Uploading">Uploading</string>
+    <string name="Discard">Discarding</string>
+    <string name="Camera">Camera</string>
+    <string name="Setting">Setting</string>
+    <string name="picture_description">Describe</string>
+    <string name="Picture">Above Picture</string>
+    <string name="CameraModel">CameraModel</string>
+</resources>
