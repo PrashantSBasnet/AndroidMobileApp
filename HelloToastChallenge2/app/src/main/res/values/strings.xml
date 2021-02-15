@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hello Toast Challenge2</string>
+    <string name="app_name">hellotoastchallenge2</string>
     <string name="button_toast">Button</string>
     <string name="button_count">Button</string>
     <string name="button_label_toast">Toast</string>

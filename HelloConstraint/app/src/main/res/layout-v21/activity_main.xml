@@ -14,10 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@id/button_toast"
-        android:layout_alignLeft="@id/button_toast"
         android:layout_alignParentStart="true"
         android:layout_marginStart="11dp"
-        android:layout_marginLeft="0dp"
 
         android:layout_marginTop="32dp"
 
@@ -27,8 +25,7 @@
 
         android:textColor="#FFFFFF"
         app:backgroundTint="#3F51B5"
-        app:layout_constraintHorizontal_bias="0.571"
-        android:layout_alignParentLeft="true" />
+        app:layout_constraintHorizontal_bias="0.571" />
 
     <TextView
         android:id="@+id/show_count"
@@ -36,12 +33,10 @@
         android:layout_height="302dp"
         android:layout_below="@+id/button_toast"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="106dp"
 
-        android:layout_marginLeft="106dp"
         android:layout_marginTop="-50dp"
 
         android:layout_marginEnd="14dp"
@@ -52,9 +47,7 @@
         android:textColor="#3F51B5"
         android:textSize="160sp"
         app:layout_constraintHorizontal_bias="0.491"
-        tools:ignore="HardcodedText"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="14dp" />
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_counting"
@@ -62,15 +55,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_zero"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="32dp"
 
+
         android:onClick="countUp"
         android:text="@string/button_label_count"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="8dp" />
+        android:backgroundTint="@color/button_background_color"
+        app:backgroundTint="#3F51B5"/>
 
     <Button
         android:id="@+id/button_zero"
@@ -82,9 +75,8 @@
         android:layout_marginTop="61dp"
         android:text="@string/Zero"
         app:backgroundTint="#8F8383"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="12dp"
         android:onClick="clearUp"
-        android:backgroundTint="@color/button_background_color"/>>
+        android:backgroundTint="@color/button_background_color"/>
+
 
 </RelativeLayout>

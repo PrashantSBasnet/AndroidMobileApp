@@ -54,7 +54,7 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/button_count"
+        android:id="@+id/button_counting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_zero"
@@ -76,6 +76,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="61dp"
         android:text="@string/Zero"
-        app:backgroundTint="#8F8383" />
+        android:onClick="clearUp"
+        android:backgroundTint="@color/button_background_color"/>
 
 </RelativeLayout>
