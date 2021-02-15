@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scrolling Text</string>
+    <string name="Article_Title">Heading of the Contents</string>
+    <string name="Article_subheading">Sub Heading of the Contents</string>
+    <string name="scroll_view">Scroll View</string>
+    <string name="article">TextView</string>
+    <string name="Add_Comment">Add Comment</string>
+</resources>
