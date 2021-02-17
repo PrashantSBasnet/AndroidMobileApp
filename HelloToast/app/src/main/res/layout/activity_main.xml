@@ -16,7 +16,9 @@
         android:text="@string/button_label_toast"
         android:textColor="#FFFFFF"
 
+        android:layout_marginStart="11dp"
         app:layout_constraintHorizontal_bias="0.571"
+        android:layout_marginEnd="11dp"
 
          />
 
@@ -25,14 +27,16 @@
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
-        android:layout_height="491dp"
+        android:layout_height="0dp"
         android:background="#FFFF00"
         android:gravity="center"
         android:text="@string/count_initial_value"
         android:textColor="#3F51B5"
         android:textSize="160sp"
 
-        app:layout_constraintHorizontal_bias="0.491"
+        android:layout_marginStart="11dp"
+        app:layout_constraintHorizontal_bias="0.571"
+        android:layout_marginEnd="11dp"
         android:layout_weight="1"
 
         tools:ignore="HardcodedText" />
@@ -46,7 +50,9 @@
         android:onClick="countUp"
         android:text="@string/button_label_count"
 
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="11dp"
+        app:layout_constraintHorizontal_bias="0.571"
+        android:layout_marginEnd="11dp"
         />
 
 </LinearLayout>

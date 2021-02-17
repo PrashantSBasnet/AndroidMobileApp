@@ -53,7 +53,7 @@
         android:gravity="center"
         android:text="@string/count_initial_value"
         android:textColor="#3F51B5"
-        android:textSize="120dp"
+        android:textSize="120sp"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

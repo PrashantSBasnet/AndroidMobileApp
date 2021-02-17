@@ -15,10 +15,11 @@
         android:onClick="showToast"
         android:text="@string/button_label_toast"
         android:textColor="#FFFFFF"
-
+        android:layout_marginStart="11dp"
         app:layout_constraintHorizontal_bias="0.571"
+        android:layout_marginEnd="11dp"
 
-         />
+        android:layout_marginLeft="11dp" />
 
 
 
@@ -33,8 +34,11 @@
         android:textSize="160sp"
         android:layout_centerHorizontal="true"
 
-        app:layout_constraintHorizontal_bias="0.491"
-        android:layout_weight="1"
+        android:layout_marginStart="11dp"
+        app:layout_constraintHorizontal_bias="0.571"
+        android:layout_marginEnd="11dp"
+
+
         android:layout_below="@+id/button_toast"
 
         android:layout_alignParentLeft="true"
@@ -51,7 +55,9 @@
         android:onClick="countUp"
         android:text="@string/button_label_count"
         android:layout_below="@+id/show_count"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="11dp"
+        app:layout_constraintHorizontal_bias="0.571"
+        android:layout_marginEnd="11dp"
         />
 
 </RelativeLayout>

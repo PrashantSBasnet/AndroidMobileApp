@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         /**
          * setting buttons via xml
          * R represents res folder
@@ -66,20 +64,12 @@ public class MainActivity extends AppCompatActivity{
         {
             Log.d(TAG, "savedInstanceState is not null");
 
-
-
-            //To do
-            //call method that displays score
-
-
+            //to display score
             teamAscore = savedInstanceState.getInt("score");
             Log.d(TAG,"value"+teamAscore);
 
 
             scoreTeamA.setText(Integer.toString(teamAscore));
-
-
-
 
 
         }

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG= MainActivity.class.getName();
     private Button btn;
 
-    //control + O to get these methods
+    //control + O to get these methods overridden
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("key", 100 );
                 intent.putExtra("key1", "this is data");
                 startActivity(intent);
-
             }
         });
     }
