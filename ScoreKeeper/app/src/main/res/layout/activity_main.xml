@@ -22,35 +22,40 @@
             android:background="#fff4f4f4"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginEnd="1dp">
 
             <TextView
+                android:id="@+id/score_teamA"
+                style="@style/team_textstyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/team_a"
-                style="@style/team_textstyle" />
+                android:textSize="36sp" />
 
             <TextView
                 android:id="@+id/scoreteamA"
+                style="@style/team_textstyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif-light"
-                android:text="0"
-                style="@style/team_textstyle" />
+                android:text="@string/COUNTER"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/score1"
+                style="@style/team_textstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:background="#fd0095ff"
                 android:onClick="teamAOneScore"
-                android:text="@string/_1_point"
-                style="@style/team_textstyle" />
+                android:text="@string/SCORE_1" />
 
             <Button
                 android:id="@+id/score2"
+                style="@style/team_textstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -58,11 +63,11 @@
                 android:onClick="teamATwoScore"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/_2_point"
-                style="@style/team_textstyle" />
+                android:text="@string/SCORE_2" />
 
             <Button
                 android:id="@+id/score3"
+                style="@style/team_textstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -70,8 +75,7 @@
                 android:onClick="teamAThreeScore"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/_3_point"
-                style="@style/team_textstyle" />
+                android:text="@string/SCORE_3" />
         </LinearLayout>
 
 
@@ -88,33 +92,37 @@
             android:layout_marginEnd="1dp">
 
             <TextView
+                android:id="@+id/score_teamB"
+                style="@style/team_textstyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="@string/team_b"
-                style="@style/team_textstyle" />
+                android:text="@string/TEAM_B"
+                android:textSize="36sp" />
 
             <TextView
                 android:id="@+id/scoreteamB"
+                style="@style/team_textstyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="sans-serif-light"
-                android:text="@string/_0"
-                style="@style/team_textstyle" />
+                android:text="@string/COUNTER"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/score1B"
+                style="@style/team_textstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:background="#fd0095ff"
                 android:onClick="teamBOneScore"
-                android:text="@string/_1_point"
-                style="@style/team_textstyle"/>
+                android:text="@string/SCORE_1" />
 
             <Button
                 android:id="@+id/score2B"
+                style="@style/team_textstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -122,11 +130,11 @@
                 android:onClick="teamBTwoScore"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/_2_point"
-                style="@style/team_textstyle" />
+                android:text="@string/SCORE_2" />
 
             <Button
                 android:id="@+id/score3B"
+                style="@style/team_textstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -134,21 +142,20 @@
                 android:onClick="teamBThreeScore"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="@string/_3_point"
-                style="@style/team_textstyle" />
+                android:text="@string/SCORE_3" />
 
         </LinearLayout>
     </LinearLayout>
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_width="169dp"
+        android:layout_height="174dp"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -160,7 +167,6 @@
             android:textSize="14sp" />
 
     </LinearLayout>
-
 
 
 </LinearLayout>

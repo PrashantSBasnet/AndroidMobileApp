@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "helloconstraint"
+rootProject.name = "Hello Constraint"
