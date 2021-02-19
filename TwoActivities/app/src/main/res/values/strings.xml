@@ -4,4 +4,8 @@
     <string name="message">Message Received</string>
     <string name="Long_Message">Enter Your Message Here</string>
     <string name="editText_main">Enter Your message here</string>
+    <string name="EditText">Enter Your Reply Here</string>
+    <string name="button_second">REPLY</string>
+    <string name="text_header_reply">Reply Received</string>
+    <string name="EditText_Second" />
 </resources>
