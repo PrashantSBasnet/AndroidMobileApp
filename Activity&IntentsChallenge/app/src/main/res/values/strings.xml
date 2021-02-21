@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Activite &amp; Intents Challenge</string>
+    <string name="btn_first">Text One</string>
+    <string name="btn_second">Text Two</string>
+    <string name="btn_third">Text Three</string>
+    <string name="txt_display">TextView</string>
+
+    <string name= "paraone">
+    The three arguments to onActivityResult() contain all the information you need to handle the return data: the requestCode you set when you launched the Activity with startActivityForResult(), the resultCode set in the launched Activity (usually one of RESULT_OK or RESULT_CANCELED), and the Intent data that contains the data returned from the launch Activity.
+    </string>
+
+    <string name="para_first_text" />
+</resources>
