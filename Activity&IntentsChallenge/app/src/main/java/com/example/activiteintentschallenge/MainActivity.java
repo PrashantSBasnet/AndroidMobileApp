@@ -23,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 "An application can define the target component directly in the intent (explicit intent) or ask the " +
                 "Android system to evaluate registered components based on the intent data(implicit intents).");
 
-
-
         startActivity(intent);
-
 
     }
 
@@ -52,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                         "contain a ScrollView that displays one of three text passages (you can include your choice of passages)." +
                         " Use an Intent to launch the second Activity with extras to indicate which of the three passages to display.");
         startActivity(intent);
-
 
     }
 }

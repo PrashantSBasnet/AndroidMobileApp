@@ -1,7 +1,10 @@
 package com.example.hellotoast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
      */
     private int myCount=0;
     private TextView mShowCount; //to get reference to the TextView having scores
+
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+    public static final String EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE";
 
 
 
@@ -26,15 +32,33 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * android:onClick("") in activity_main.xml auto generates the following methods
+
+     /** android:onClick("") in activity_main.xml auto generates the following methods
      * @param view
      */
 
+
     public void showToast(View view) {
+
+        /**
+         * Initial Hello Toast Program
+         */
 
         Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
         toast.show();
+        Log.d(LOG_TAG, "Button is clicked");
+
+        /**
+         * coding of Activites and Intents
+         */
+
+        Intent intent = new Intent(this, SecondActivity.class);
+        String message = "Hello"+ "\n"+ "    "+ myCount;
+        intent.putExtra(EXTRA_MESSAGE, message);
+
+        startActivity(intent);
+
+
 
     }
 
@@ -46,4 +70,7 @@ public class MainActivity extends AppCompatActivity {
         myCount++;
         mShowCount.setText(""+myCount);
     }
+
+
+
 }
