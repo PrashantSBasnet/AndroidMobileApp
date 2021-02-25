@@ -45,9 +45,10 @@ public class SecondActivity extends AppCompatActivity {
          */
 
         Intent intent = getIntent();
+        //message entered by user in the TextField of MainActivity
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-
+        //TextField of SecondActivity
         TextView textView = findViewById(R.id.text_message);
 
         textView.setText(message);
@@ -62,34 +63,29 @@ public class SecondActivity extends AppCompatActivity {
     public void returnReply(View view) {
 
         String reply = mReply.getText().toString();
-
         /** new intent object for reply*/
 
         Intent replyIntent = new Intent();
-
         /** key value pairs
          * key=EXTRA_REPLY
          * value=reply
          */
+
         replyIntent.putExtra(EXTRA_REPLY, reply);
 
         /** for success response*/
         setResult(RESULT_OK,replyIntent);
 
         /**to check activity lifecycle*/
-
         Log.d(LOG_TAG, "End of SecondActivity");
 
         /** closes the activity */
         finish();
-
-
     }
 
     /**
      * codes for activity lifecycle tasks
      */
-
     @Override
     protected void onStart() {
         super.onStart();

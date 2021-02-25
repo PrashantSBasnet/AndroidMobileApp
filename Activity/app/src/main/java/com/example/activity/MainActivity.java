@@ -1,5 +1,6 @@
 package com.example.activity;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,11 +8,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG= MainActivity.class.getName();
     private Button btn;
+
+    public static final int MAIN_REQUEST_CODE = 1;
+    private TextView textView2;
 
     //control + O to get these methods overridden
 
@@ -36,8 +41,21 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("key", 100 );
                 intent.putExtra("key1", "this is data");
                 startActivity(intent);
+                startActivityForResult(intent, MAIN_REQUEST_CODE);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == MAIN_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                String reply = data.getStringExtra(SecondActivity.EXTRA_REPLY);
+                textView2.setText(reply);
+                textView2.setVisibility(View.VISIBLE);
+            }
+        }
     }
 
     /**
