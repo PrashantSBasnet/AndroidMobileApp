@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
-
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final String EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE";
@@ -55,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     public void launchSecondActivity(View view) {
         Log.d(LOG_TAG, "Button clicked!");
         Intent intent = new Intent(this, SecondActivity.class);
@@ -69,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //for result value entered in second activity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

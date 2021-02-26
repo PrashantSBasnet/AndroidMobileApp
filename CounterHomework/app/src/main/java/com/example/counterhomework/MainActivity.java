@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
         btnIncrement = findViewById(R.id.button);
 
 
+        //---for rotating screen
         //the bundle is not null when device rotates
         if (savedInstanceState!=null){
             count = savedInstanceState.getInt("key_counter");
             textView.setText(Integer.toString(count));
         }
-
     }
 
 
@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt("key_counter", count);
     }
+
+         //--------
 
 
 

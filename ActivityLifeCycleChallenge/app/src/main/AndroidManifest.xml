@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.twoactivities">
+    package="com.example.activitylifecyclechallenge">
 
     <application
         android:allowBackup="true"
@@ -8,15 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TwoActivities">
-        <activity
-            android:name=".SecondActivity"
-            android:label="Second Activity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.twoactivities.MainActivity" />
-        </activity>
+        android:theme="@style/Theme.ActivityLifeCycleChallenge">
+        <activity android:name=".SecondActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
