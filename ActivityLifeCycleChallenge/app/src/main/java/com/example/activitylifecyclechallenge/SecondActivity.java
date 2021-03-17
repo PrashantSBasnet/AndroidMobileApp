@@ -21,25 +21,25 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-
-
     }
 
 
     //when add button is pressed
     public void returnValue(View view) {
-       reply = "Cheese";
+       reply = "Apple";
 
 
        //--trying for multiples
+        /*
         Button btn_rice = (Button)findViewById(R.id.btn_rice);
 
         btn_rice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                reply = "rice";Log.d(LOG_TAG, reply);
+                reply = "rice";
+                Log.d(LOG_TAG, reply);
             }
-        } );
+        } );*/
         //---------
 
 
