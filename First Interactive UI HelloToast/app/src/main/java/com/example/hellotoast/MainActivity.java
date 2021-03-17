@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE";
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         mShowCount= findViewById(R.id.show_count);
 
     }
-
 
      /** android:onClick("") in activity_main.xml auto generates the following methods
      * @param view

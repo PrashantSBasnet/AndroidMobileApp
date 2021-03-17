@@ -19,9 +19,36 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,SecondActivity.class);
 
 
-        intent.putExtra("second", "Android supports explicit and implicit intents. " +
-                "An application can define the target component directly in the intent (explicit intent) or ask the " +
-                "Android system to evaluate registered components based on the intent data(implicit intents).");
+        intent.putExtra("second", "SECOND SECOND SECOND SECOND SECOND SECOND" +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "+
+                "CLICKED CLICKED CLICKED CLICKED " +
+                        "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "+
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "
+                +
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- "+
+                "CLICKED CLICKED CLICKED CLICKED " +
+                "SECOND --------SECOND---------- SECOND--------- ");
 
         startActivity(intent);
 
@@ -30,12 +57,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchFirstActivity(View view) {
         Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-        intent.putExtra("first", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
-                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis " +
-                "nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in " +
-                "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat " +
-                "cupidatat non " +
-                "proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        intent.putExtra("first", "FIRST  FIRST FIRST FIRST FIRST  FIRST  FIRST"  +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "FIRST ------ FIRST ---- FIRST --- FIRST"+
+                "FIRST  FIRST FIRST FIRST FIRST  FIRST  FIRST"  +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "FIRST ------ FIRST ---- FIRST --- FIRST"+
+                "FIRST  FIRST FIRST FIRST FIRST  FIRST  FIRST"  +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "FIRST ------ FIRST ---- FIRST --- FIRST"+
+                "FIRST  FIRST FIRST FIRST FIRST  FIRST  FIRST"  +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "FIRST ------ FIRST ---- FIRST --- FIRST"+"FIRST ------ FIRST ---- FIRST --- FIRST"+
+                "FIRST  FIRST FIRST FIRST FIRST  FIRST  FIRST"  +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "FIRST ------ FIRST ---- FIRST --- FIRST"+
+                "FIRST  FIRST FIRST FIRST FIRST  FIRST  FIRST"  +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "CLICKED CLICKED CLICKED CLICKED  " +
+                "FIRST ------ FIRST ---- FIRST --- FIRST"
+        );
         startActivity(intent);
 
     }
@@ -44,10 +90,25 @@ public class MainActivity extends AppCompatActivity {
     public void launchThirdActivity(View view) {
 
         Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-        intent.putExtra("second", "Challenge: Create an app with three Button elements labeled Text One, Text Two, and " +
-                        "Text Three. When any of these Button elements are clicked, launch a second Activity. That second Activity should " +
-                        "contain a ScrollView that displays one of three text passages (you can include your choice of passages)." +
-                        " Use an Intent to launch the second Activity with extras to indicate which of the three passages to display.");
+        intent.putExtra("second", "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "CLICKED CLICKED CLICKED CLICKED  " +
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "CLICKED CLICKED CLICKED CLICKED  " +
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "CLICKED CLICKED CLICKED CLICKED  " +
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "CLICKED CLICKED CLICKED CLICKED  " +
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "CLICKED CLICKED CLICKED CLICKED  " +
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"+
+                        "CLICKED CLICKED CLICKED CLICKED  " +
+                        "THIRD ----- THIRD ----- THIRD ------ THIRD ------"
+                     );
         startActivity(intent);
 
     }
