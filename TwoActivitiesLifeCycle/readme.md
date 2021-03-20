@@ -9,7 +9,8 @@
   
   </ul>
 
-![7](https://user-images.githubusercontent.com/50170332/111466799-d3c2fb80-874b-11eb-8c2e-0022ee78f68a.gif)
+![activities and intents lifecycle challenge](https://user-images.githubusercontent.com/50170332/111861502-e66d4880-8976-11eb-9f41-7d7c3db147ee.gif)
+
 
 
 
